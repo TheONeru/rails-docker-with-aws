@@ -10,4 +10,6 @@
 
 <p>4.docker-compose up<p>
   
-<p>5.起動確認</p>
+<p>5. CromeなどのWebクライアントのアドレスバーに"localhost:3000"を入力し，Railsアプリのテンプレートが表示されることを確認する</p>
+
+<img border="0" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kisokoji/20180131/20180131090648.png" alt="rails_temp">
