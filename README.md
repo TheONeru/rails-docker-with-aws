@@ -13,3 +13,5 @@
 <p>5. CromeなどのWebクライアントのアドレスバーに"localhost:3000"を入力し，Railsアプリのテンプレート(下の画像)が表示されることを確認する</p>
 
 <img border="0" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kisokoji/20180131/20180131090648.png" alt="rails_temp">
+
+<p>railsアプリでmigrateするときにdatabaseを作成してなので、エラーがでる。そのためdocker-compose run web rails db:createでdatabaseを作成してからmigrateする</p>
