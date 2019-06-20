@@ -15,7 +15,7 @@
 <img border="0" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kisokoji/20180131/20180131090648.png" alt="rails_temp">
 
 <h1>注意点</h1>
-<p>railsアプリでmigrateするときにdatabaseを作成してなので、エラーがでる。そのためdocker-compose run web rails db:createでdatabaseを作成してからmigrateする</p>
+<p>railsアプリでmigrateするときにdatabaseを作成してなので、エラーがでる。そのためdocker-compose run web rails db:createでdatabaseを作成してからmigrateする</p></br>
 <p>databaseへのログインはdbconsoleではなく，コンテナ上に直接入る必要があるため</p>
 <p>1.docker-compoes up -d //-dでバックグラウンド起動</p>
 <p>2.docker exec -it "起動しているdbのコンテナname" bash //""は外して</p>
