@@ -20,3 +20,10 @@
 <p>1.docker-compoes up -d //-dでバックグラウンド起動</p>
 <p>2.docker exec -it "起動しているdbのコンテナname" bash //""は外して</p>
 <p>3.mysql -u root //mysqlにログイン</p>
+
+<h1>AWS(Fargate)移行時に起きたエラーまとめ</h1>
+<ul>
+<li>production環境ではseacret_key_baseをlocalで出力してfargateの環境変数として渡す必要があった</li>
+<li>config/database.yml内でproduction環境で使用するDBが外部DB(RDSなど)で有るときにはurl: mysql2//dbuser:dbpassword@hostname(endponint)/dbname　の形で記載しないとエラーが出る。どうやらlocalでのサーバー通信だと捉えられてしまうよう</li>
+ <li>あらかじめECRなどのリポジトリにpushする前にrails assets:precompileしてcss, jsを読み込み可能な形にする必要がある</li>
+ </ul>
